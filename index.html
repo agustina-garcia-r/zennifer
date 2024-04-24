@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zennifer</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <nav>
+<img src="logo.png" alt="Logo" class="logo">
+<ul id="menu-links">
+    <li>Home</li>
+    <li>About</li>
+    <li>Contact</li>
+    
+</ul>
+<button class="nav-btn">Get started <img src="arrow-white.png" alt=""></button>
+<img src="menu.png" alt="" class="menu-icon" onclick="toggleMenu()">
+ </nav>   
+
+<div class="header">
+<div class="header-content">
+    <h1>FREE<br>LANCER</h1>
+<div class="btn-container">
+    <button class="btn-dark">Request call back <img src="phone.png" alt=""></button>
+</div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+</div>
+</div>
+
+<script>
+
+    let navbar = document.querySelector('nav');
+let menuLinks = document.getElementById('menu-links');
+
+function toggleMenu() {
+menuLinks.classList.toggle('show-menu');
+}
+
+    window.onscroll = function(){
+if(window.scrollY > 0) {
+    navbar.style.background =  '#eefff9';
+} else {
+    navbar.style.background =  'transparent';
+}
+ }
+</script>
+
+</body>
+</html>
